@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Thư viện HUFLIT</title>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
+    <link rel="icon" href="https://huflit.edu.vn/wp-content/uploads/2022/10/logo.png " />
+    <link rel="stylesheet" type="text/css" href="~/Content/menu.css"
+</head>
+<body>
+    <header style="background-color: #005FAB; overflow:auto">
+        <table width="100%" height="60px">
+            <tr>
+                <td width="30%" align="center">
+                    <i class="fa fa-home icon" aria-hidden="true" style="color:white"></i>
+                </td>
+                <td width="30%">
+                    <div class="search-box">
+                        <link rel="stylesheet" href="~/Content/timkiem.css"/>
+                        <input type="text" placeholder="Tìm kiếm...">
+                       
+                    </div>
+                </td>
+                <td width="40%" align="right" style="padding:10px">
+                    <i class="fa fa-user" aria-hidden="true" style="color:white"></i>
+                    <button id="loginBtn">Đăng Nhập</button>
+                    <link rel="stylesheet" href="~/Content/popuplogin.css">
+
+                    <div id="loginPopup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <h2 style="font:700 18px/18px 'Lato', sans-serif;color:#343434">ĐĂNG NHẬP</h2>
+                            <form>
+                                <label for="username" style="color:#898989;font-family:Arial, Helvetica, sans-serif;font-size:12px"><i class="fa fa-user"></i> Tên người dùng:</label>
+                                <input type="text" id="username" name="username" required>
+
+                                <label for="password" style="color:#898989;font-family:Arial, Helvetica, sans-serif;font-size:12px"><i class="fa fa-lock"></i> Mật khẩu:</label>
+                                <input type="password" id="password" name="password" required>
+
+                                <button type="submit">Đăng Nhập</button></br>
+                                <span style="font-family:Arial, Helvetica, sans-serif;font-size:15px"> Quên mật khẩu?</span>
+                            </form>
+                        </div>
+                    </div>
+
+                    <script src="~/Scripts/popuplogin.js"></script>
+
+                </td>
+            </tr>
+        </table>
+    </header>
+    <nav>
+        <a href="https://huflit.edu.vn/">
+            <img src="https://lib.huflit.edu.vn/Temp/SiteImage/Banner.png" width="100%" />
+        </a>
+        <div id="menu">
+            <ul>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Trang chủ</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Giới thiệu</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Dịch vụ thư viện</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Giới thiệu sách</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Tài liệu số</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Tra cứu</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Liên kết</a></li></strong>
+                <li><strong style="font-family: Roboto, Arial, Helvetica, sans-serif;font-size:15px"><a href="#">Liên hệ</a></li></strong>
+            </ul>
+          
+        </div>
+    </nav>
+    @RenderBody()
+<main>
+    <link rel="stylesheet" href="~/Content/book.css">
+    <div class="book-display">
+        <div class="book-item">
+
+           <img src="https://docsachhay.net/images/e-book/tan-tinh-bat-ky-ai.jpg" alt="Book 1"
+            <h3>Tán Tỉnh Bất Kỳ Ai</h3>
+            <p>Tác giả: Leil Lowndes</p>
+
+        </div>
+        <div class="book-item" >
+            <img src="https://docsachhay.net/images/e-book/doi-ngan-dung-ngu-dai.jpg"  alt="Book 2">
+            <h3>Đời Ngắn Đừng Ngủ Dài</h3>
+            <p>Tác giả: Robin Sharma</p>
+        </div>
+        <div class="book-item">
+            <img src="https://docsachhay.net/images/e-book/lam-the-nao-de-chinh-phuc-doi-phuong.jpg" alt="Book 3">
+            <h3>
+                Làm Thế Nào Để Chinh Phục Đối Phương
+            </h3>
+            <p>Tác giả: Hoàng Văn Tuấn</p>
+        </div>
+        <div class="book-item">
+            <img src="https://docsachhay.net/images/e-book/9-bi-quyet-van-dung-luat-hap-dan-de-thay-doi-van-menh-cuoc-doi.jpg" alt="Book 3">
+            <h3>9 Bí Quyết Vận Dụng Luật Hấp Dẫn Để Thay Đổi Vận Mệnh Cuộc Đời</h3>
+            <p>Tác giả: Pam Grout</p>
+        </div>
+        <div class="book-item">
+            <img src="https://docsachhay.net/images/e-book/tieu-su-steve-jobs.jpg" alt="Book 3">
+            <h3>Tiểu Sử Steve Jobs</h3>
+            <p>Tác giả: Walter Isaacson</p>
+        </div>
+        <div class="book-item">
+            <img src="book3.jpg" alt="Book 3">
+            <h3>Tên Sách 3</h3>
+            <p>Tác giả: Tác giả 3</p>
+        </div>
+        <div class="book-item">
+            <img src="https://docsachhay.net/images/e-book/bi-mat-hanh-trinh-tinh-yeu.jpg" alt="Book 3">
+            <h3>Bí Mật Hành Trình Tình Yêu</h3>
+            <p>Tác giả: David Niven</p>
+        </div>
+
+    </div>
+</main>
+    <footer style="background-color: #005FAB; width: 100%; clear: both;color:white;padding:0px 15px">
+        <table width="100%">
+            <tr>
+                <td width="40%">
+                    <h4 style="text-decoration: underline; text-decoration-color: #FF6903; font-family: 'Open Sans';font-size:14px;margin:0px 0px 15px; padding:5px 0px 0px"> THÔNG TIN LIÊN HỆ</h4>
+                    <p style="font-family:Arial, Helvetica, sans-serif;font-size:13px"><i class="fa fa-location-arrow" style="color:white"></i> <strong>Trụ sở chính:</strong> 828 Sư Vạn Hạnh, phường 13, Quận 10, TP. HCM </p>
+                    <p style="font-family:Arial, Helvetica, sans-serif;font-size:13px"><i class="fa fa-fax" style="color:white"></i> 028 3863 2052 line 128</p>
+                    <p style="font-family:Arial, Helvetica, sans-serif;font-size:13px"><i class="fa fa-internet-explorer"></i> lib.huflit.edu.vn</p>
+                    <p style="font-family:Arial, Helvetica, sans-serif;font-size:13px"><i class="fa fa-facebook-square" style="color:white"></i> <a href="https://www.facebook.com/thuvienhuflit/" style="text-decoration:none;color:white ">Facebook</a></p>
+                </td>
+
+                <td width="30%" style="font-family: sans-serif">
+                    <h4  style="text-decoration: underline; text-decoration-color: #FF6903; font-family: 'Open Sans';font-size:14px;margin:0px 0px 15px; padding:5px 0px 0px">GIỜ MỞ CỬA</h4>
+                    <span style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif; font-size:13px">
+                        <strong> *Cơ sở Sư Vạn Hạnh</strong>
+                        <p> Thứ 2 - 6: 8g00 - 20g00 </p>
+                        <p>Thứ 7: 8g00 - 17g00</p>
+                        <strong> *Cơ sở Hốc Môn</strong>
+                        <p> Thứ 2 - 6: 07g30 - 18g00</p>
+                        <p>Thứ 7: 7g30 - 16g00</p>
+                        <p>(Nghỉ Chủ nhật & Ngày lễ)</p>
+                    </span>
+                </td>
+                <div></div>
+                <td width="30%">
+                    <h4  style="text-decoration: underline; text-decoration-color: #FF6903; font-family: 'Open Sans';font-size:14px;margin:0px 0px 15px; padding:5px 0px 0px"> THỐNG KÊ</h4>
+                    <span style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif; font-size:13px">
+                        <p><i class="fa fa-bar-chart out-line" style="color:white"></i> Đang online: </p>
+                        <p><i class="fa fa-bar-chart out-line" style="color:white"></i> Truy cập hôm nay: </p>
+                        <p><i class="fa fa-bar-chart out-line" style="color:white"></i> Truy cập tuần này: </p>
+                        <p><i class="fa fa-bar-chart out-line" style="color:white"></i> Truy cập tháng này: </p>
+                        <p><i class="fa fa-bar-chart out-line" style="color:white"></i> Truy cập tháng trước: </p>
+                        <p><i class="fa fa-bar-chart out-line" style="color:white"></i> Tổng truy cập: </p>
+                    </span>
+                  
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
